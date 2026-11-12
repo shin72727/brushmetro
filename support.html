@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>양치 지하철 고객 지원</title>
+<meta name="description" content="양치 지하철(Brush Metro) 자주 묻는 질문과 문의 방법.">
+<meta name="color-scheme" content="light dark">
+<style>
+  :root {
+    --bg: #f6f4fb;
+    --surface: #ffffff;
+    --text: #1d1b22;
+    --muted: #5d5868;
+    --line: #e4e0ee;
+    --tint: #8b4f9e;
+    --tint-soft: #f1e8f5;
+    --radius: 20px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #121016;
+      --surface: #1d1a23;
+      --text: #f2eff7;
+      --muted: #aaa3b6;
+      --line: #322d3b;
+      --tint: #c99ad8;
+      --tint-soft: #2c2133;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #121016;
+    --surface: #1d1a23;
+    --text: #f2eff7;
+    --muted: #aaa3b6;
+    --line: #322d3b;
+    --tint: #c99ad8;
+    --tint-soft: #2c2133;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Segoe UI", Roboto, sans-serif;
+    font-size: 17px;
+    line-height: 1.7;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 24px 16px 64px; }
+  header.hero { padding: 24px 0 8px; }
+  .badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-size: 14px; font-weight: 600; color: var(--tint);
+    background: var(--tint-soft); padding: 6px 12px; border-radius: 999px;
+  }
+  h1 { font-size: 30px; line-height: 1.3; margin: 14px 0 6px; letter-spacing: -0.01em; }
+  h2 { font-size: 21px; margin: 28px 0 10px; }
+  p { margin: 0 0 10px; }
+  .muted { color: var(--muted); }
+  nav.lang { display: flex; gap: 8px; margin: 18px 0 8px; flex-wrap: wrap; }
+  nav.lang a {
+    text-decoration: none; color: var(--text); font-weight: 600; font-size: 15px;
+    border: 1px solid var(--line); background: var(--surface);
+    padding: 8px 14px; border-radius: 999px;
+  }
+  .contact {
+    background: var(--tint-soft); border-radius: var(--radius);
+    padding: 18px 20px; margin: 16px 0 8px;
+  }
+  .contact strong { color: var(--tint); }
+  details {
+    background: var(--surface); border: 1px solid var(--line);
+    border-radius: 16px; margin: 10px 0; padding: 0 18px;
+  }
+  summary {
+    cursor: pointer; list-style: none; font-weight: 600;
+    padding: 14px 28px 14px 0; position: relative; min-height: 44px;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::after {
+    content: "+"; position: absolute; right: 0; top: 12px;
+    font-size: 22px; line-height: 1; color: var(--muted);
+  }
+  details[open] summary::after { content: "–"; }
+  details > div { padding: 0 0 14px; }
+  ul, ol { padding-left: 22px; margin: 6px 0 10px; }
+  li { margin: 4px 0; }
+  a { color: var(--tint); }
+  hr.divider { border: 0; border-top: 1px dashed var(--line); margin: 40px 0 24px; }
+  footer { color: var(--muted); font-size: 14px; margin-top: 28px; }
+  @media (max-width: 480px) {
+    h1 { font-size: 26px; }
+    details { padding: 0 14px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<!-- ============================ 한국어 ============================ -->
+<article id="ko" lang="ko">
+  <header class="hero">
+    <span class="badge">양치 지하철 · iPad 앱</span>
+    <h1>고객 지원</h1>
+    <p class="muted">칫솔을 들면 기차가 출발해요! 궁금한 점을 모았어요.</p>
+    <nav class="lang" aria-label="언어 선택">
+      <a href="#ko">한국어</a>
+      <a href="#en">English</a>
+    </nav>
+  </header>
+
+  <div class="contact">
+    <p><strong>문의: <a href="mailto:shin727k@gmail.com">shin727k@gmail.com</a></strong></p>
+    <p class="muted">iPad 모델, iPadOS 버전, 앱 버전(App Store의 앱 페이지에서 확인)을 함께 적어 주시면 더 빨리 도와드릴 수 있어요. 보통 며칠 안에 답장드려요.</p>
+  </div>
+
+  <h2>보물과 역</h2>
+
+  <details>
+    <summary>보물은 어떻게 받나요?</summary>
+    <div>
+      <p>홈 화면에서 "양치 시작!"을 누르고 끝까지 닦으면 선물이 도착해요. 보물은 정해진 순서대로 하나씩 열려요.</p>
+      <ol>
+        <li>GTX-A 노선과 첫 번째 역</li>
+        <li>GTX 승차권(개찰구를 지나갈 수 있어요)</li>
+        <li>그다음부터는 새 역이 하나씩, 이어서 GTX-B와 GTX-C 노선</li>
+      </ol>
+      <p>중간에 "그만할래요"를 누르면 그번에는 보물을 받지 못해요.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>오늘은 왜 보물을 못 받나요? (하루 보상 횟수)</summary>
+    <div>
+      <p>보물은 하루에 받을 수 있는 횟수가 정해져 있어요. 처음 설정은 <strong>하루 3번</strong>이에요. 그 횟수를 다 채우면 "오늘 보상은 다 받았어요. 내일 또 만나요!"라는 안내가 나와요.</p>
+      <ul>
+        <li>그래도 양치는 언제든 할 수 있고, 양치 기록에도 남아요. 보물만 다음 날 받아요.</li>
+        <li>날짜는 iPad 시계를 기준으로 자정에 바뀌어요.</li>
+        <li>보호자 설정의 "하루 보상 횟수"에서 1~5번 또는 무제한으로 바꿀 수 있어요.</li>
+      </ul>
+    </div>
+  </details>
+
+  <details>
+    <summary>역 안에 들어가려면 어떻게 하나요?</summary>
+    <div>
+      <p>홈 화면에서 "노선도"를 누른 뒤 열린 역을 누르면 블록으로 지은 3D 역으로 들어가요. 왼쪽 조이스틱으로 걷고, 화면 오른쪽을 끌어서 둘러봐요. 개찰구는 GTX 승차권이 있어야 열려요. 승강장에 멈춘 열차에 들어가 "출발!"을 누르면 다른 열린 역으로 갈 수 있어요.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>"다음 역이 아직 잠겨 있어요"라고 나와요.</summary>
+    <div>
+      <p>열차가 가는 방향에 아직 열린 역이 없다는 뜻이에요. 양치를 해서 새 역을 열거나, 반대쪽 승강장의 열차를 타 보세요.</p>
+    </div>
+  </details>
+
+  <h2>보호자 설정</h2>
+
+  <details>
+    <summary>보호자 설정은 어떻게 여나요?</summary>
+    <div>
+      <p>홈 화면 오른쪽 위의 <strong>톱니바퀴를 1초 동안 꾹 눌러</strong> 주세요(짧게 누르면 안내만 나와요). 그다음 화면에 나오는 계산 문제의 답을 누르면 보호자 설정이 열려요. 아이가 실수로 설정을 바꾸지 않도록 만든 장치예요.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>보호자 설정에서 무엇을 바꿀 수 있나요?</summary>
+    <div>
+      <ul>
+        <li>양치 시간: 1분, 2분(처음 설정), 3분</li>
+        <li>하루 보상 횟수: 1~5번 또는 무제한</li>
+        <li>음성 안내와 효과음 켜기/끄기</li>
+        <li>총 양치 횟수, 연속 양치 일수, 양치 기록 보기</li>
+      </ul>
+    </div>
+  </details>
+
+  <details>
+    <summary>"보물 하나 선물하기"는 무엇인가요?</summary>
+    <div>
+      <p>보호자가 양치 없이 다음 보물을 하나 열어 주는 기능이에요. 특별히 칭찬하고 싶은 날, 또는 아이가 기다리는 역을 먼저 보여 주고 싶을 때 써 보세요. 이렇게 받은 보물은 양치 기록에 남지 않아요.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>처음부터 다시 하고 싶어요. (진행 상황 초기화)</summary>
+    <div>
+      <ol>
+        <li>톱니바퀴를 1초 길게 누르고 문제를 풀어 보호자 설정을 열어요.</li>
+        <li>맨 아래 "진행 상황 초기화"를 누르고 "모두 지우기"를 눌러요.</li>
+      </ol>
+      <p>모은 노선, 역, 승차권, 양치 기록이 모두 지워지고 되돌릴 수 없어요. 양치 시간 같은 설정은 그대로 남아요. 앱을 삭제해도 모든 기록이 지워져요.</p>
+    </div>
+  </details>
+
+  <h2>그 밖에</h2>
+
+  <details>
+    <summary>인터넷이 필요한가요? 개인정보를 모으나요?</summary>
+    <div>
+      <p>인터넷 연결 없이 동작해요. 광고, 인앱 결제, 로그인이 없고, 어떤 개인정보도 수집하지 않아요. 진행 상황과 설정은 이 iPad 안에만 저장돼요. 자세한 내용은 <a href="privacy-policy.html">개인정보처리방침</a>을 보세요.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>새 iPad로 바꾸면 기록이 옮겨지나요?</summary>
+    <div>
+      <p>앱에는 계정이나 동기화 기능이 없어요. iCloud 백업이나 컴퓨터 백업으로 새 iPad를 복원하면 다른 앱 데이터와 함께 옮겨질 수 있어요. 앱을 새로 설치하기만 하면 처음부터 시작해요.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>목소리나 소리가 안 들려요.</summary>
+    <div>
+      <ul>
+        <li>iPad 음량을 올려 보세요.</li>
+        <li>보호자 설정에서 "음성 안내"와 "효과음"이 켜져 있는지 확인해 주세요.</li>
+        <li>음성 안내는 iPad에 내장된 한국어 음성을 써요. 소리가 이상하면 iPad의 설정 → 손쉬운 사용 → 읽기 및 말하기 → 음성에서 한국어 음성을 확인해 보세요.</li>
+      </ul>
+    </div>
+  </details>
+
+  <details>
+    <summary>어떤 기기에서 쓸 수 있나요?</summary>
+    <div>
+      <p>iPadOS 18 이상의 iPad에서 가로 화면으로 즐길 수 있어요. iPhone에서는 쓸 수 없어요.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>실제 GTX와 관련이 있나요?</summary>
+    <div>
+      <p>아니요. 개인 개발자가 만든 앱으로, 철도 운영사나 정부 기관과는 관련이 없어요. 역과 열차는 직접 그린 블록 그림이에요. GTX-A는 지금 실제로 달리는 운정중앙–서울역 구간을 담았고, GTX-B와 GTX-C는 앞으로 생길 노선을 상상해 만들었어요.</p>
+    </div>
+  </details>
+</article>
+
+<hr class="divider">
+
+<!-- ============================ English ============================ -->
+<article id="en" lang="en">
+  <header class="hero">
+    <span class="badge">Brush Metro (양치 지하철) · iPad app</span>
+    <h1>Support</h1>
+    <p class="muted">Pick up the toothbrush and the train departs! Answers to common questions.</p>
+    <nav class="lang" aria-label="Language">
+      <a href="#ko">한국어</a>
+      <a href="#en">English</a>
+    </nav>
+  </header>
+
+  <div class="contact">
+    <p><strong>Contact: <a href="mailto:shin727k@gmail.com">shin727k@gmail.com</a></strong></p>
+    <p class="muted">Please include your iPad model, iPadOS version and app version. We usually reply within a few days. The app itself is in Korean; button names are given in Korean below.</p>
+  </div>
+
+  <h2>Treasures and stations</h2>
+
+  <details>
+    <summary>How does my child earn treasures?</summary>
+    <div>
+      <p>Tap "양치 시작!" (Start brushing) on the home screen and brush until the end; a present arrives. Treasures open in a fixed order:</p>
+      <ol>
+        <li>The GTX-A line and its first station</li>
+        <li>The GTX ticket (opens the ticket gates)</li>
+        <li>Then one new station at a time, followed by the GTX-B and GTX-C lines</li>
+      </ol>
+      <p>Stopping early with "그만할래요" (Stop) means no treasure that time.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Why can't my child get a treasure today? (daily limit)</summary>
+    <div>
+      <p>There is a daily treasure limit, <strong>3 per day</strong> by default. Once it is reached, the app says the treasures for today are done and to come back tomorrow.</p>
+      <ul>
+        <li>Brushing still works any time and is still recorded; only the treasure waits until the next day.</li>
+        <li>The day changes at midnight on the iPad's clock.</li>
+        <li>Change it under "하루 보상 횟수" (Daily treasures) in Parent settings: 1–5 or unlimited.</li>
+      </ul>
+    </div>
+  </details>
+
+  <details>
+    <summary>How do we go inside a station?</summary>
+    <div>
+      <p>Tap "노선도" (Line map) on the home screen, then tap an open station to enter the blocky 3D station. Walk with the joystick on the left and drag on the right side to look around. The ticket gates open only with the GTX ticket. Step into a stopped train and tap "출발!" (Depart) to ride to another open station.</p>
+    </div>
+  </details>
+
+  <h2>Parent settings</h2>
+
+  <details>
+    <summary>How do I open Parent settings?</summary>
+    <div>
+      <p><strong>Press and hold the gear</strong> at the top right of the home screen for 1 second (a short tap only shows a hint), then answer the arithmetic question. This keeps children from changing settings by accident.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>What can I change there?</summary>
+    <div>
+      <ul>
+        <li>Brushing time: 1, 2 (default) or 3 minutes</li>
+        <li>Daily treasures: 1–5 or unlimited</li>
+        <li>Voice guide and sound effects on/off</li>
+        <li>Total sessions, brushing streak and brushing history</li>
+      </ul>
+    </div>
+  </details>
+
+  <details>
+    <summary>What is "보물 하나 선물하기" (Give a treasure)?</summary>
+    <div>
+      <p>It lets a parent open the next treasure without brushing, for a day worth celebrating or to show a station your child is waiting for. Treasures given this way are not added to the brushing history.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>How do I reset progress?</summary>
+    <div>
+      <ol>
+        <li>Open Parent settings (hold the gear for 1 second, answer the question).</li>
+        <li>Tap "진행 상황 초기화" (Reset progress) at the bottom, then "모두 지우기" (Erase all).</li>
+      </ol>
+      <p>All lines, stations, the ticket and the brushing history are erased and cannot be restored. Settings such as brushing time are kept. Deleting the app also erases everything.</p>
+    </div>
+  </details>
+
+  <h2>Other questions</h2>
+
+  <details>
+    <summary>Does it need the internet? Does it collect data?</summary>
+    <div>
+      <p>No internet connection is needed. There are no ads, no in-app purchases and no login, and no personal data is collected. Progress and settings stay on the iPad. See the <a href="privacy-policy.html#en">Privacy Policy</a>.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Will progress move to a new iPad?</summary>
+    <div>
+      <p>There is no account or sync. Restoring a new iPad from an iCloud or computer backup may bring the app data along with other app data. A fresh install starts from the beginning.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Which devices are supported?</summary>
+    <div>
+      <p>iPad with iPadOS 18 or later, in landscape. Not available on iPhone.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Is this related to the real GTX?</summary>
+    <div>
+      <p>No. It is made by an independent developer and is not affiliated with any railway operator or government agency. Stations and trains are original block-style artwork. GTX-A covers the Unjeong Jungang–Seoul Station section that runs today; GTX-B and GTX-C are imagined future lines.</p>
+    </div>
+  </details>
+</article>
+
+<footer>
+  <p>© 2026 신성환 (Sunghwan Shin) · 양치 지하철 (Brush Metro) · <a href="privacy-policy.html">개인정보처리방침 / Privacy Policy</a></p>
+</footer>
+
+</div>
+</body>
+</html>
